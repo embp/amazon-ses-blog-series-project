@@ -1,0 +1,14 @@
+<mjml>
+  <mj-body>
+    <mj-section>
+      <mj-column>
+        <mj-divider border-color="#3c0ac4"></mj-divider>
+        <mj-text font-size="20px" color="#3c0ac4" font-family="helvetica">
+				Hello {{name}}, welcome to {{appname}}.</mj-text>
+        <mj-text font-size="16px" color="#000000">
+        This is a welcome email from your application!
+        </mj-text>
+      </mj-column>
+    </mj-section>
+  </mj-body>
+</mjml>
