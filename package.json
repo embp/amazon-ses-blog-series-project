@@ -8,6 +8,8 @@
     "build": "rimraf ./build && tsc && yarn run copy:mjml ",
     "start:dev": "nodemon",
     "start": "npm run build && node build/index.js",
+    "start:create-template": "npm run build && node build/create-template.js",
+    "start:delete-template": "npm run build && node build/delete-template.js",
     "lint": "eslint . --ext .ts",
     "prettier-format": "run-script-os",
     "prettier-format:win32": "prettier --config .prettierrc \"./src/**/*.ts\" --write",

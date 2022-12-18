@@ -8,6 +8,7 @@ import {
   SendTemplatedEmailCommandInput,
   SendTemplatedEmailCommand,
   DeleteTemplateCommand,
+  UpdateTemplateCommand,
 } from '@aws-sdk/client-ses';
 
 export default class SesService {
@@ -30,6 +31,14 @@ export default class SesService {
   public createTemplate(template: Template) {
     return this.sesClient.send(
       new CreateTemplateCommand({
+        Template: template,
+      }),
+    );
+  }
+
+  public updateTemplate(template: Template) {
+    return this.sesClient.send(
+      new UpdateTemplateCommand({
         Template: template,
       }),
     );
